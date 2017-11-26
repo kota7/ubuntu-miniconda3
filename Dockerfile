@@ -18,7 +18,6 @@ RUN wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 RUN bash Miniconda3-latest-Linux-x86_64.sh -b -p $CONDA_PATH
 RUN rm Miniconda3-latest-Linux-x86_64.sh 
 ENV PATH $CONDA_PATH/bin:$PATH
-RUN echo $PATH
 
 
 # greeting
