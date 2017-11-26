@@ -20,6 +20,11 @@ RUN rm Miniconda3-latest-Linux-x86_64.sh
 ENV PATH $CONDA_PATH/bin:$PATH
 
 
+# run test script
+ADD test.sh /tmp
+RUN /bin/bash /tmp/test.sh
+
+
 # greeting
 RUN echo "DONE! :D"
 
